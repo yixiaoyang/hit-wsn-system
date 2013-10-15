@@ -1,6 +1,0 @@
-#!/bin/sh
-
-$QTDIR/bin/uic -o SettingDlg.h SettingDlg.ui
-$QTDIR/bin/uic -o SettingDlg.cpp -impl SettingDlg.h SettingDlg.ui
-$QTDIR/bin/moc SettingDlg.h -o moc_SettingDlg.cpp
-

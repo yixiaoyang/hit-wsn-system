@@ -1,6 +1,0 @@
-#!/bin/sh
-
-$QTDIR/bin/uic -o first.h first.ui
-$QTDIR/bin/uic -o first.cpp -impl first.h first.ui
-$QTDIR/bin/moc first.h -o moc_first.cpp
-
