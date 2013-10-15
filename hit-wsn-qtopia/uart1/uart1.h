@@ -1,10 +1,10 @@
-#ifndef UART2_H
-#define UART2_H
+#ifndef UART1_H
+#define UART1_H
 
 #define FALSE		0
 #define TRUE		1
 
-#define WORDLEN		32		//其他名称长度32字节（16个汉字）
+#define WORDLEN		32
 
 struct serial_config
 {
