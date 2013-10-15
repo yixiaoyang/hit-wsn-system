@@ -1,0 +1,4 @@
+使用方法：将tq2440_serial.cfg文件复制到开发板的文件系统的/etc/目录下，通过修改tq2440_serial.cfg文件可以设置串口号，波特率等等参数。
+默认是tq2440_serial2,波特率115200。
+将编译好的serial_test程序复制到开发板的/sbin/目录下，然后运行serial_test即可测试串口。
+TQ2440开发板的3个串口名分别为tq2440_serial0,tq2440_serial1,tq2440_serial2，其中串口0作为控制台使用。串口1和串口2空闲。

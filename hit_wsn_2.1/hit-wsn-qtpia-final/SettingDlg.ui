@@ -1,0 +1,170 @@
+<!DOCTYPE UI><UI>
+<class>SettingDlg</class>
+<widget>
+    <class>QDialog</class>
+    <property stdset="1">
+        <name>name</name>
+        <cstring>SettingDlg</cstring>
+    </property>
+    <property stdset="1">
+        <name>geometry</name>
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>320</width>
+            <height>241</height>
+        </rect>
+    </property>
+    <property stdset="1">
+        <name>minimumSize</name>
+        <size>
+            <width>320</width>
+            <height>240</height>
+        </size>
+    </property>
+    <property stdset="1">
+        <name>maximumSize</name>
+        <size>
+            <width>320</width>
+            <height>250</height>
+        </size>
+    </property>
+    <property stdset="1">
+        <name>caption</name>
+        <string>Setting</string>
+    </property>
+    <grid>
+        <property stdset="1">
+            <name>margin</name>
+            <number>11</number>
+        </property>
+        <property stdset="1">
+            <name>spacing</name>
+            <number>6</number>
+        </property>
+        <widget row="1"  column="1" >
+            <class>QPushButton</class>
+            <property stdset="1">
+                <name>name</name>
+                <cstring>PushButton_Cancel</cstring>
+            </property>
+            <property stdset="1">
+                <name>text</name>
+                <string>Cancel</string>
+            </property>
+        </widget>
+        <widget row="1"  column="0" >
+            <class>QPushButton</class>
+            <property stdset="1">
+                <name>name</name>
+                <cstring>PushButton_OK</cstring>
+            </property>
+            <property stdset="1">
+                <name>text</name>
+                <string>OK</string>
+            </property>
+        </widget>
+        <widget row="0"  column="0"  rowspan="1"  colspan="2" >
+            <class>QLayoutWidget</class>
+            <property stdset="1">
+                <name>name</name>
+                <cstring>Layout4</cstring>
+            </property>
+            <grid>
+                <property stdset="1">
+                    <name>margin</name>
+                    <number>0</number>
+                </property>
+                <property stdset="1">
+                    <name>spacing</name>
+                    <number>6</number>
+                </property>
+                <widget row="0"  column="0" >
+                    <class>QLabel</class>
+                    <property stdset="1">
+                        <name>name</name>
+                        <cstring>TextLabel1</cstring>
+                    </property>
+                    <property stdset="1">
+                        <name>text</name>
+                        <string>Fresh Frequence</string>
+                    </property>
+                </widget>
+                <widget row="2"  column="1" >
+                    <class>QComboBox</class>
+                    <property stdset="1">
+                        <name>name</name>
+                        <cstring>ComboBox_Boardrate</cstring>
+                    </property>
+                </widget>
+                <widget row="2"  column="0" >
+                    <class>QLabel</class>
+                    <property stdset="1">
+                        <name>name</name>
+                        <cstring>Boardrate</cstring>
+                    </property>
+                    <property stdset="1">
+                        <name>text</name>
+                        <string>Boardrate Setting</string>
+                    </property>
+                </widget>
+                <widget row="1"  column="1" >
+                    <class>QComboBox</class>
+                    <property stdset="1">
+                        <name>name</name>
+                        <cstring>ComboBox1</cstring>
+                    </property>
+                </widget>
+                <widget row="0"  column="1" >
+                    <class>QLineEdit</class>
+                    <property stdset="1">
+                        <name>name</name>
+                        <cstring>EditFrequence</cstring>
+                    </property>
+                </widget>
+                <widget row="1"  column="0" >
+                    <class>QLabel</class>
+                    <property stdset="1">
+                        <name>name</name>
+                        <cstring>Enlargement</cstring>
+                    </property>
+                    <property stdset="1">
+                        <name>text</name>
+                        <string>Enlargement</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>ComboBox1</sender>
+        <signal>activated(int)</signal>
+        <receiver>SettingDlg</receiver>
+        <slot>enlarge_select()</slot>
+    </connection>
+    <connection>
+        <sender>ComboBox_Boardrate</sender>
+        <signal>activated(int)</signal>
+        <receiver>SettingDlg</receiver>
+        <slot>boardrate_select()</slot>
+    </connection>
+    <connection>
+        <sender>PushButton_OK</sender>
+        <signal>clicked()</signal>
+        <receiver>SettingDlg</receiver>
+        <slot>ok_pressed()</slot>
+    </connection>
+    <connection>
+        <sender>PushButton_Cancel</sender>
+        <signal>pressed()</signal>
+        <receiver>SettingDlg</receiver>
+        <slot>cancel_pressed()</slot>
+    </connection>
+    <slot access="public">boardrate_select()</slot>
+    <slot access="public">enlarge_select()</slot>
+    <slot access="public">cancel_pressed()</slot>
+    <slot access="public">ok_pressed()</slot>
+</connections>
+</UI>

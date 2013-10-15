@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#$QTDIR/bin/uic -o first.h first.ui
+#$QTDIR/bin/uic -o first.cpp -impl first.h first.ui
+#$QTDIR/bin/moc first.h -o moc_first.cpp
+
+$QTDIR/bin/uic -o console.h console.ui
+$QTDIR/bin/uic -o console.cpp -impl console.h console.ui
+$QTDIR/bin/moc console.h -o moc_console.cpp
+

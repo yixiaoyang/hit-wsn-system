@@ -1,0 +1,6 @@
+#!/bin/sh
+
+$QTDIR/bin/uic -o Monitor.h Monitor.ui
+$QTDIR/bin/uic -o Monitor.cpp -impl Monitor.h Monitor.ui
+$QTDIR/bin/moc Monitor.h -o moc_Monitor.cpp
+

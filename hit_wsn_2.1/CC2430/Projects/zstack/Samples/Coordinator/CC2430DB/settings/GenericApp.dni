@@ -1,0 +1,40 @@
+[DisAssemblyWindow]
+NumStates=_ 1
+State 1=_ 1
+[Profiling]
+Enabled=0
+[StackPlugin]
+Enabled=1
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnHow=0
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[Breakpoints]
+Bp0=_ "Code" "{D:\Texas Instruments\ZStack-1.4.3-1.2.1\COMPONENTS\HAL\INCLUDE\hal_uart.h}.65.1@1" 0 0 0 0 "" 0 ""
+Bp1=_ "Code" "{C:\Documents and Settings\Administrator\×ÀÃæ\Texas Instruments\ZStack-1.4.3-1.2.1\Projects\zstack\ZMain\TI2430DB\ZMain.c}.387.1@1" 0 0 0 0 "" 0 ""
+Bp2=_ "Code" "{C:\Documents and Settings\Administrator\×ÀÃæ\project\513\hit_wsn_2.1\CC2430\Components\mt\SPIMgr.c}.386.1@1" 0 0 0 0 "" 0 ""
+Bp3=_ "Code" "{$PROJ_DIR$}.332.3@1" 0 0 0 0 "" 0 ""
+Bp4=_ "Code" "{$PROJ_DIR$}.331.1@1" 0 0 0 0 "" 0 ""
+Bp5=_ "Code" "{$PROJ_DIR$}.870.1@1" 0 0 0 0 "" 0 ""
+Bp6=_ "Code" "{$PROJ_DIR$}.868.1@1" 0 0 0 0 "" 0 ""
+Bp7=_ "Code" "{$PROJ_DIR$}.863.1@1" 0 0 0 0 "" 0 ""
+Bp8=_ "Code" "{$PROJ_DIR$}.870.3@1" 0 0 0 0 "" 0 ""
+Bp9=_ "Code" "{$PROJ_DIR$}.891.5@1" 0 0 0 0 "" 0 ""
+Bp10=_ "Code" "{$PROJ_DIR$}.872.5@1" 0 0 0 0 "" 0 ""
+Bp11=_ "Code" "{$PROJ_DIR$}.889.8@1" 0 0 0 0 "" 0 ""
+Bp12=_ "Code" "{$PROJ_DIR$}.905.3@1" 0 0 0 0 "" 0 ""
+Count=13
+[ChipconEmu]
+Stop timers on halt=0
+Leave target running=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
